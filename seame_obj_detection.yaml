@@ -1,0 +1,29 @@
+
+"""
+    The dataset is split into three subsets:
+
+    Train: This subset contains 100k images for training object detection, segmentation, and captioning models.
+    Val: This subset has 20k images used for validation purposes during model training.
+    Minival: This subset is exactly the same as COCO val2017 set which has 5k images used for validation purposes during model training.
+    Test: This subset consists of 20k images used for testing and benchmarking the trained models. 
+          Ground truth annotations for this subset are not publicly available, and the results are submitted to the LVIS evaluation server for performance evaluation.
+    
+    Structure:
+
+    /datasets/car_camera/
+    ├── images/
+    │   ├── train/       # Training images (0001.jpg, 0002.jpg,...)
+    │   └── val/         # Validation images
+    └── labels/
+        ├── train/       # Label files (0001.txt, 0002.txt,...)
+        └── val/         # YOLO format: class x_center y_center width height
+
+"""
+
+path: /datasets/car_camera 
+train: images/train        
+val: images/val            
+test: images/test          
+
+names:
+  0: car

@@ -1,0 +1,5 @@
+yolo*
+runs/
+datasets/
+*.jpg
+venv
